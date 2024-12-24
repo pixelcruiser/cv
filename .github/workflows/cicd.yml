@@ -16,7 +16,7 @@ jobs:
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.MY_TG_ID }}
-        token: ${{ secrets.MY_BOT_TOKEN }}
+        token: ${{ secrets.TG_BOT_TOKEN }}
         message: |
           ${{ github.actor }} создал новый коммит: ${{ github.event.commits[0].message }}
           Ссылка на коммит: https://github.com/${{ github.repository }}/commit/${{github.sha}}
